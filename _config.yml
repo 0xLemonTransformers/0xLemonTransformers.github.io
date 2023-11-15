@@ -1,0 +1,65 @@
+title: 0xTrustTryEP Blog
+description: Always believe that wonderful things will happen...
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-architect
+# head github repository
+github.repository_url: launchpad.git
+repository: 0xLemonTransformers/launchpad.git
+# feed,注意变量的声明不能带.-
+github:
+    username: 0xLemonTransformers
+iteye:
+    username: donald-draper
+gitee:
+    username: 0xLemonTransformerss
+jianshu:
+    username: 0xLemonTransformers
+0xLemonTransformers:
+    email: 0xLemonTransformers@aliyun.com
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-lunr-js-search
+
+paginate: 10
+paginate_path: "page:num"
+
+#timezone: Asia/Shanghai
+# tipue_search fulltext search base liquid
+# collections is an array containing a list of collections you want to include.
+#https://github.com/0xLemonTransformers/jekyll-tipue-search
+tipue_search:
+  include:
+    pages: true
+#    collections: [apples, oranges]
+
+#Exclude multiple files, tags or categories using a setting in _config.yml. files is an array containing
+#a list of file paths to be excluded. tags and categories are arrays containing lists of tags and categories you want to exclude.
+#tipue_search:
+#  exclude:
+#    files: [search.html, _apples/gragg.md, _oranges/valencia.md]
+#    tags: [tag1, tag2]
+#    categories: [category1, category2]
+
+#lunr-js-search,move to plugins
+#gems: ['jekyll-lunr-js-search']
+
+# exclude pages from the search index , you can else add
+# the following exclude_from_search setting to any page's YAML config.
+# exclude_from_search: true
+#
+#lunr_search:
+  #excludes: [rss.xml, atom.xml]
+
+#configure a stopwords file, and a minimum length of word to be included in the index file.
+#This can be done by adding a search block to _config.yml. The default values are:
+#lunr_search:
+#  stopwords: "stopwords.txt"
+#  min_length: 3
+
+#store index.json, search.min.js and lunr.min.js in a different directory like this:
+#lunr_search:
+#  js_dir: "fulltext"
