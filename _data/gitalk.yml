@@ -1,7 +1,7 @@
 # gitalk config
 clientID: 7b2c8515b34559595cc6
 clientSecret: fd431541b9de1c1e1d7eb7de6ed3d8f0d340eb86
-repo: launchpad
+repo: 0xLemonTransformers.github.io 
 owner:  0xLemonTransformers
 admin:  0xLemonTransformers
 language: en
