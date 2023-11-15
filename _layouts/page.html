@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+   {% include head.html %}
+  <body>
+    {% include header.html %}
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+		  <div class="site-heading">
+            <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+			<span class="subheading">write by {{ page.author}}, {{ page.date | date:  "%Y-%m-%d %H:%M" }}</span>
+			{% if page.description %}
+				<span class="subheading">{{ page.description }}</span>
+			{% endif %}
+          </div>
+		   <div class="tags">
+				 {% for tag in page.tags %}
+					 <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+				{% endfor %}
+        	</div>
+          {{ content }}
+          <div id="gitalk-container"/>
+        </section>
+        {% include aside.html %}
+        <div>
+        </div>
+      </div>
+    </div>
+    <div>
+        {% include footer.html %}
+    </div>
+    {% if site.google_analytics %}
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+    <script type="text/javascript">
+        var clientID = "{{ site.data.gitalk.clientID }}";
+        console.log("clientID:"+clientID)
+        const gitalk = new Gitalk({
+                 clientID:"{{ site.data.gitalk.clientID }}",
+                 clientSecret: "{{ site.data.gitalk.clientSecret }}",
+                 repo: "{{ site.data.gitalk.repo }}",
+                 owner: "{{ site.data.gitalk.owner }}",
+                 admin: ["{{ site.data.gitalk.admin }}"],
+                 language: "{{ site.data.gitalk.language }}",
+                 // facebook-like distraction free mode
+                 distractionFreeMode: "{{ site.data.gitalk.mode }}"
+                })
+        gitalk.render('gitalk-container')
+    </script>
+  </body>
+</html>
