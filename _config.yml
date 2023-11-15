@@ -4,8 +4,8 @@ show_downloads: false
 google_analytics:
 theme: jekyll-theme-architect
 # head github repository
-github.repository_url: launchpad.git
-repository: 0xLemonTransformers/launchpad.git
+github.repository_url: 0xLemonTransformers.git
+repository: 0xLemonTransformers/0xLemonTransformers.github.io 
 # feed,注意变量的声明不能带.-
 github:
     username: 0xLemonTransformers
