@@ -9,8 +9,6 @@ repository: 0xLemonTransformers/0xLemonTransformers.github.io
 # feed,注意变量的声明不能带.-
 github:
     username: 0xLemonTransformers
-iteye:
-    username: donald-draper
 gitee:
     username: 0xLemonTransformerss
 jianshu:
