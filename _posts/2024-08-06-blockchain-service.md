@@ -52,9 +52,11 @@ tags:
  * 互联网技术趋势与应用培训
  * 项目管理与实施培训
 
-![header](/image/chain/header.jpg)
 
-欢迎交流，微信号：Achillesful
+
+欢迎扫码加微信交流
+
+![header](/image/chain/lemonx.jpg)
 
 
 
