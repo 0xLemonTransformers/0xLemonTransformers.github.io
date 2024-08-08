@@ -1,5 +1,5 @@
 title: 0xLemonTransformers
-description: Always believe that wonderful things will happen...
+description: Have a try...
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-architect
@@ -12,7 +12,7 @@ github:
 gitee:
     username: 0xLemonTransformerss
 0xLemonTransformers:
-    email: 0xLemonTransformers@gmail.com
+    email: lemonx001@hotmail.com
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 plugins:

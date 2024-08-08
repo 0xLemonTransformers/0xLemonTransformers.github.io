@@ -4,3 +4,4 @@ Gemfile.lock
 *.gem
 *.bak
 .idea
+.DS_Store
